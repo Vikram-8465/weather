@@ -1,0 +1,144 @@
+.host{
+    font-family: gillroy, sans-serif;
+}
+
+.container {
+    background-color: #05283C;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    width: clamp(250px,350px,90%);
+    background-color: whitesmoke;
+    padding: .5rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.search-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width: 60%;
+    color:  #05283C;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.search-box .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6c7c7;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.search-box .search-icon:hover {
+    cursor: pointer;
+    background-color: #a8d6e5;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: clamp(250px,350px,90%);
+    background-color: #F5F5F5;
+}
+
+.body img {
+    width: 50%
+}
+
+.body p[data-first]{
+    font-size: 3.3rem;
+    font-weight: 550;  
+}
+
+.body p[data-two]{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.body .degree {
+    position: relative;
+    top: -25px;
+    font-size: 2rem;
+}
+
+.body .celsius {
+    position: relative;
+    top: -34px;
+    font-size: 1.3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px,350px,90%);
+    background-color: #F5F5F5;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 5%;
+    gap: 10%;
+}
+
+.footer p{
+    font-weight: 600; 
+}
+
+.footer .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .left img {
+    width: 30px;
+}
+
+.footer .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .right img {
+    width: 30px;
+}
+
+.no-location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: clamp(250px,350px,90%);
+        background-color: #F5F5F5;
+        border-radius: 0 0 .5rem .5rem;
+        padding: 5%;
+        gap: 10%;
+}
+
+.no-location img{
+    width: 74%;
+    margin-bottom: 7%;
+}
+
+.no-location p{
+   font-weight: 600;
+   color:  #05283C;
+}

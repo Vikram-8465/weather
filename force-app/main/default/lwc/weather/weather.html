@@ -1,0 +1,49 @@
+<template>
+    <div class="container">
+        <div class="search-box">
+
+            <lightning-icon icon-name="utility:checkin" size="small"></lightning-icon>
+            <input type="text" placeholder="Enter location" onchange={handleChange} />
+            <div class="search-icon">
+                <lightning-icon icon-name="utility:search" size="small" onclick={handleClick}></lightning-icon>
+            </div>
+        </div>
+        <template lwc:if={isLocationAvailable}>
+
+            <div class="body">
+                <img src={weather.image} alt="weather">
+                <p data-first>
+                    {weather.temp}<span class="degree">°</span><span class="celsius">C</span>
+                </p>
+                <p data-two>{weather.description}</p>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src={images.mist} alt="mist">
+                    <div>
+                        <p>{weather.humidity}%</p>
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <img src={images.wind} alt="wind">
+                    <div>
+                        <p>{weather.wind}km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+
+                </div>
+            </div>
+        </template>
+
+        <template lwc:elseif={isLocationNotAvailable}>
+            <div class="no-location">
+                <img src={images.none} alt="404">
+                <p>Location Not Found!</p>
+            </div>
+        </template>
+
+    </div>
+
+</template>
